@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fName = "Basil";
-const lName = "Maben";
-const num = 7;
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+
+customStyle.color = "blue";
 
 ReactDOM.render(
-  <div>
-    <h1>Hello {fName + " " + lName}!</h1>
-    <p>Your lucky number is {num}</p>
-  </div>,
+  <h1 style={customStyle}>Hello World!</h1>,
   document.getElementById("root")
 );
